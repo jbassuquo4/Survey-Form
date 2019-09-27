@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Survey form for developers">
+    <meta name="author" content="Jerry Asuquo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Developer Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Developer Survey Form</h1>
+    <div id="form-outer">
+        <p id="description">
+            If you are a developer, we'd appreciate if you could fill out this survey!
+        </p>
+        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name"
+                        required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="email">* Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" required
+                        placeholder="Enter your Email">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="age">* Age: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="currentPos">Which option best describes your current role?</label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="currentPos" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRating">* How many years of experience?</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label>< 1 year<input name="radio-buttons" value="1" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"><label>1-2 years<input name="radio-buttons" value="2" type="radio"
+                                    class="userRatings"></label></li>
+                        <li class="radio"><label>2-5 years<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+                        <li class="radio"><label>6-10 years<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+                        <li class="radio"><label>> 11 years<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="most-like">Highest level of education: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="most-like" name="mostLike" class="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="Self taught">Self taught</option>
+                        <option value="Certificate">Certificate</option>
+                        <option value="Bootcamp">Bootcamp</option>
+                        <option value="Bachelors or Masters in other field">Bachelors or Masters in other field</option>
+                        <option value="Bachelors or Masters in Computer Science">Bachelors or Masters in Computer Science</option>
+                        <option value="Ph.D. in Computer Science or related field">Ph.D. in Computer Science or related field</option>
+                        <option value="Ph.D. in other field">Ph.D. in other field</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="most-like">What subject do you like most: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="most-like" name="mostLike" class="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="UX/UI design">UX/UI design</option>
+                        <option value="Cloud">Cloud</option>
+                        <option value="Web development">Web development</option>
+                        <option value="Mobile App development">Mobile App development</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="preferences">What are your favorite technologies?<br>(Check all that apply):
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox"
+                                    class="userRatings">HTML5</label></li>
+                        <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">CSS3</li>
+                        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox"
+                                    class="userRatings">JavaScript</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox"
+                                    class="userRatings">Linux</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="5" type="checkbox"
+                                    class="userRatings">Git/GitHub</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="6" type="checkbox"
+                                    class="userRatings">Python</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="7" type="checkbox"
+                                    class="userRatings">Ruby</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="8" type="checkbox"
+                                    class="userRatings">C#</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="9" type="checkbox"
+                                    class="userRatings">Java</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="10" type="checkbox"
+                                    class="userRatings">Go</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="10" type="checkbox"
+                                    class="userRatings">C/C++</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comments">Any Comments or Suggestions?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
